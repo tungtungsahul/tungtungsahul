@@ -14,13 +14,15 @@
 
 Mình thích biến những gì đang học thành dự án có thể chạy được — từ **C++**, **cơ sở dữ liệu** đến **ứng dụng web tích hợp AI**. Đây là góc nhỏ để mình lưu lại quá trình thử, sửa và hiểu thêm mỗi ngày.
 
-Hiện mình đang phát triển **[MindSprint AI](https://github.com/tungtungsahul/MindSprint-AI-D-n)**: kết hợp flashcards, Sổ tay AI và quản lý công việc để hỗ trợ việc học.
+Hiện mình đang phát triển **[MindSprint AI](https://github.com/tungtungsahul/MindSprint-AI-D-n)**: kết hợp flashcards, Sổ tay AI và quản lý công việc để hỗ trợ việc học. Mình cũng **cùng phát triển [ScamGuard AI](https://github.com/maingiangu-svg/ScamGuard-AI)** với nhóm: sàng lọc tin nhắn và URL đáng ngờ bằng mô hình học máy chạy cục bộ.
 
 <a id="du-an"></a>
 
 ## Những thứ mình đang xây
 
 <a href="https://github.com/tungtungsahul/MindSprint-AI-D-n"><img src="assets/mindsprint.png" width="100%" alt="MindSprint AI: nền tảng học tập với flashcards, Sổ tay AI và Kanban. ASP.NET Core, PostgreSQL, JavaScript. Mở repository." /></a>
+
+<a href="https://github.com/maingiangu-svg/ScamGuard-AI"><img src="assets/scamguard.png" width="100%" alt="ScamGuard AI — dự án cùng phát triển với nhóm: sàng lọc tin nhắn và URL đáng ngờ bằng mô hình học máy cục bộ. Next.js, TypeScript, Python. Mở repository của nhóm." /></a>
 
 <a href="https://github.com/tungtungsahul/Sales_manager"><img src="assets/sales.png" width="100%" alt="Sales Manager: ứng dụng C++ quản lý giỏ hàng, sản phẩm, giảm giá và hóa đơn. Mở repository." /></a>
 
