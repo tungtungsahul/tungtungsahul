@@ -1,0 +1,63 @@
+name: Refresh profile visuals
+
+on:
+  schedule:
+    - cron: "23 0 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/profile-visuals.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-visuals
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out profile
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Generate contribution snakes
+        uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            assets/contributions.svg?color_snake=#16715c&color_dots=#ebedf0,#ccf3e7,#8addbe,#46b491,#16715c
+            assets/contributions-dark.svg?palette=github-dark&color_snake=#91f8d0&color_dots=#17212c,#183d36,#29624d,#4ca67a,#91f8d0
+
+      - name: Generate typing introduction
+        run: |
+          curl --fail --show-error --silent --location --retry 3 \
+            'https://readme-typing-svg.demolab.com?font=Fira%20Code&size=24&duration=3200&pause=1200&color=91F8D0&center=true&vCenter=true&width=900&height=60&lines=Xin%20ch%C3%A0o%2C%20m%C3%ACnh%20l%C3%A0%20B%E1%BA%A3o%20Duy.%3BH%E1%BB%8Dc%20b%E1%BA%B1ng%20c%C3%A1ch%20l%C3%A0m.%20L%C3%A0m%20%C4%91%E1%BB%83%20hi%E1%BB%83u%20h%C6%A1n.%3BMindSprint%20AI%20%2B%20ScamGuard%20AI' \
+            --output assets/typing.svg
+
+      - name: Validate generated SVGs
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import xml.etree.ElementTree as ET
+
+          for name in ("contributions.svg", "contributions-dark.svg", "typing.svg"):
+              path = Path("assets") / name
+              root = ET.parse(path).getroot()
+              assert path.stat().st_size > 100, f"Empty asset: {name}"
+              assert root.tag == "{http://www.w3.org/2000/svg}svg", f"Invalid SVG: {name}"
+              assert not any(node.tag.rsplit("}", 1)[-1] == "script" for node in root.iter()), name
+          PY
+
+      - name: Save refreshed assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/contributions.svg assets/contributions-dark.svg assets/typing.svg
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: refresh profile animations [skip ci]"
+            git push
+          fi
