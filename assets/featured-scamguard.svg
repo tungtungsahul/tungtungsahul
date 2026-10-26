@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="270" viewBox="0 0 1080 270">
+<rect x="1" y="1" width="1078" height="268" rx="16" fill="#102238" stroke="#355879" stroke-width="2"/>
+<path d="M780 1h283q16 0 16 16v236q0 16-16 16H780Z" fill="#142d48"/>
+<g font-family="Segoe UI,Arial,sans-serif">
+<text x="34" y="41" font-size="17" letter-spacing="2" fill="#91c7ff">02 / CÙNG PHÁT TRIỂN VỚI NHÓM</text>
+<text x="30" y="111" font-size="58" font-weight="700" fill="#f0f6ff">ScamGuard AI</text>
+<text x="34" y="159" font-size="24" fill="#bdcfe3">Sàng lọc tin nhắn và URL đáng ngờ</text>
+<text x="34" y="191" font-size="24" fill="#bdcfe3">bằng mô hình học máy chạy cục bộ.</text>
+<text x="34" y="241" font-size="17" fill="#91c7ff">NEXT.JS · TYPESCRIPT · PYTHON · LOCAL ML</text>
+</g>
+<g transform="translate(836 38)">
+<path d="M91 5l77 28-9 80q-9 48-68 80-59-32-68-80l-9-80Z" fill="#1f476b" stroke="#92caff" stroke-width="4"/>
+<path d="M58 97l23 24 44-51" fill="none" stroke="#a4f4d4" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="3" y="158" width="12" height="12" fill="#91c7ff"/>
+<rect x="169" y="17" width="9" height="9" fill="#91f8d0"/>
+</g>
+</svg>

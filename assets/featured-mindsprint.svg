@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="270" viewBox="0 0 1080 270">
+<rect width="1080" height="270" rx="16" fill="#e4f0d8"/>
+<path d="M780 0h284q16 0 16 16v238q0 16-16 16H780Z" fill="#d6e6c9"/>
+<g font-family="Segoe UI,Arial,sans-serif" fill="#12251e">
+<text x="34" y="41" font-size="17" letter-spacing="2">01 / HỌC TẬP + AI</text>
+<text x="30" y="111" font-size="58" font-weight="700">MindSprint AI</text>
+<text x="34" y="159" font-size="24">Flashcards, Sổ tay AI và Kanban.</text>
+<text x="34" y="191" font-size="24">Một không gian để học chủ động hơn.</text>
+<text x="34" y="241" font-size="17" fill="#38634f">C# / ASP.NET CORE · JAVASCRIPT · POSTGRESQL</text>
+</g>
+<g transform="translate(827 35)">
+<rect x="11" y="11" width="159" height="181" rx="11" fill="#628b6e"/>
+<rect width="159" height="181" rx="11" fill="#f6faee" stroke="#173e30" stroke-width="3"/>
+<path d="M31 43h75M31 62h95M31 81h57" stroke="#aac2a5" stroke-width="5"/>
+<path d="M41 126l26 20 45-43" fill="none" stroke="#20624b" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="126" y="-8" width="55" height="55" fill="#a4f4c4" stroke="#173e30" stroke-width="3"/>
+<path d="M141 19h25m-12-12v25" stroke="#173e30" stroke-width="4"/>
+</g>
+</svg>
