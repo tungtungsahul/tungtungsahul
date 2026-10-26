@@ -19,7 +19,7 @@
 </p>
 
 <a id="cong-nghe"></a>
-<h2>Công nghệ trong các dự án</h2>
+<h2><picture><source media="(prefers-color-scheme: dark)" srcset="assets/heading-tech.svg" /><img src="assets/heading-tech-light.svg" alt="Công nghệ trong các dự án" /></picture></h2>
 
 <p align="center"><img src="assets/icons/js.svg" width="48" height="48" alt="JavaScript" title="JavaScript" /> <img src="assets/icons/html.svg" width="48" height="48" alt="HTML" title="HTML" /> <img src="assets/icons/css.svg" width="48" height="48" alt="CSS" title="CSS" /> <img src="assets/icons/ts.svg" width="48" height="48" alt="TypeScript" title="TypeScript" /> <img src="assets/icons/react.svg" width="48" height="48" alt="React" title="React" /> <img src="assets/icons/nextjs.svg" width="48" height="48" alt="Next.js" title="Next.js" /></p>
 <p align="center"><sub>JavaScript · HTML · CSS · TypeScript · React · Next.js</sub></p>
@@ -30,7 +30,7 @@
 <p align="center"><sub>Cơ sở dữ liệu: PostgreSQL và T-SQL / SQL Server.</sub></p>
 
 <a id="du-an"></a>
-<h2>Dự án nổi bật</h2>
+<h2><picture><source media="(prefers-color-scheme: dark)" srcset="assets/heading-projects.svg" /><img src="assets/heading-projects-light.svg" alt="Dự án nổi bật" /></picture></h2>
 
 <a href="https://github.com/tungtungsahul/MindSprint-AI-D-n">
   <img src="assets/featured-mindsprint.svg" width="100%" alt="MindSprint AI: flashcards, Sổ tay AI và Kanban. C#, ASP.NET Core, JavaScript, PostgreSQL." />
@@ -62,7 +62,7 @@
 <p align="center"><a href="https://github.com/tungtungsahul?tab=repositories">Xem tất cả repository ↗</a></p>
 
 <a id="hoat-dong"></a>
-<h2>Mỗi ô xanh là một chút tiến bộ</h2>
+<h2><picture><source media="(prefers-color-scheme: dark)" srcset="assets/heading-activity.svg" /><img src="assets/heading-activity-light.svg" alt="Từng ô xanh, từng tiến bộ" /></picture></h2>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/contributions-dark.svg" />
